@@ -3,6 +3,8 @@ PennController.ResetPrefix(null) // Shorten command names (keep this line here)
 
 SetCounter("setcounter")
 
+var counterOverride = 0;
+
 Sequence(
 	"setcounter",
 	"intro",
