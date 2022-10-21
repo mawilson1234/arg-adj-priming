@@ -238,9 +238,9 @@ var trial = label => variable => {
 
 		newCanvas("shape", 400, 400)
 			.center()
-			.add(200, 100, newText("c0",variable.Cue0).color("red"))
-			.add(100, 300, newText("c1",variable.Cue2).color("red"))
-			.add(300, 300, newText("c2",variable.Cue3).color("red"))
+			.add(200, 100, newText(variable.cue0).color("red"))
+			.add(100, 300, newText(variable.cue1).color("red"))
+			.add(300, 300, newText(variable.cue2).color("red"))
 			.print()
 		,
 		
