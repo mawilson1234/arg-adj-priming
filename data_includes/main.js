@@ -202,7 +202,7 @@ var trial = label => variable => {
 			.wait()
 		,   
 		
-		newText("memorize2", "Read aloud & memorize (Please do not skip words!)")
+		newText("memorize2", "<i>Read aloud & memorize (Please do not skip words!)</i>")
 			.center()
 			.print()
 		,
