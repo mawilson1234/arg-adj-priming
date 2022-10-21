@@ -179,7 +179,7 @@ var trial = label => variable => {
 			.print()
 		,
 		
-		newText("target", variable.Target)
+		newText("target", variable.target)
 			.center()
 			.print()
 		,
@@ -207,7 +207,7 @@ var trial = label => variable => {
 			.print()
 		,
 
-		newText("prime", variable.Prime)
+		newText("prime", variable.prime)
 			.center()
 			.print()
 		,
