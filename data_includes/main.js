@@ -274,7 +274,7 @@ var trial = label => variable => {
 			.wait()
 		,
 		
-		getTimer('intertrial_delay', 1000)
+		getTimer('intertrial_delay')
 			.start()
 			.wait()
 		,
