@@ -155,6 +155,12 @@ var trial = label => variable => {
 	var group = label === 'filler' ? 'filler' : variable.group
 	var target_condition = label === 'filler' ? 'filler' : variable.target_condition
 	var prime_condition = label === 'filler' ? 'filler' : variable.prime_condition
+	var cue0_hpos = Math.random() < 0.5 ? 'center at 50%' : 'center at 20%'
+	var cue0_vpos = 'middle at 25%'
+	var cue1_hpos = cue0_hpos === 'center at 50%' ? 'center at 20%' : 'center at 80%'
+	var cue1_vpos = cue0_hpos === 'center at 50%' ? 'middle at 75%' : 'middle at 25%'
+	var cue2_hpos = cue0_hpos === 'center at 50%' ? 'center at 80%' : 'center at 50%'
+	var cue2_vpos = 'middle at 75%'
 	
 	return newTrial(label,
 		newText("ready", "Press space when ready")
@@ -238,9 +244,9 @@ var trial = label => variable => {
 
 		newCanvas("shape", 400, 400)
 			.center()
-			.add("center at 50%", "middle at 25%", newText(variable.cue0).color("red"))
-			.add("center at 20%", "middle at 75%", newText(variable.cue1).color("red"))
-			.add("center at 80%", "middle at 75%", newText(variable.cue2).color("red"))
+			.add(cue0_hpos, cue0_vpos, newText(variable.cue0).color("red"))
+			.add(cue1_hpos, cue1_vpos, newText(variable.cue1).color("red"))
+			.add(cue2_hpos, cue1_vpos, newText(variable.cue2).color("red"))
 			.print()
 		,
 		
