@@ -153,14 +153,24 @@ newTrial("instruction2",
 
 var trial = label => variable => {
 	var group = label === 'filler' ? 'filler' : variable.group
-	var target_condition = label === 'filler' ? 'filler' : variable.target_condition
-	var prime_condition = label === 'filler' ? 'filler' : variable.prime_condition
 	var cue0_hpos = Math.random() < 0.5 ? 'center at 50%' : 'center at 20%'
 	var cue0_vpos = 'middle at 25%'
 	var cue1_hpos = cue0_hpos === 'center at 50%' ? 'center at 20%' : 'center at 80%'
 	var cue1_vpos = cue0_hpos === 'center at 50%' ? 'middle at 75%' : 'middle at 25%'
 	var cue2_hpos = cue0_hpos === 'center at 50%' ? 'center at 80%' : 'center at 50%'
 	var cue2_vpos = 'middle at 75%'
+	
+	var flip_order 			= Math.random() < 0.5
+	var target 				= label === 'filler' : (flip_order : variable.target ? variable.prime) ? variable.target
+	var target_verb 		= label === 'filler' : (flip_order : variable.target_verb ? variable.prime_verb) ? variable.target_verb
+	var target_condition 	= label === 'filler' : (flip_order : variable.target_condition ? variable.prime_condition) ? variable.target_condition
+	var prime 				= label === 'filler' : (flip_order : variable.prime ? variable.target) ? variable.prime
+	var prime_verb 			= label === 'filler' : (flip_order : variable.prime_verb ? variable.target_verb) ? variable.prime_verb
+	var prime_condition 	= label === 'filler' : (flip_order : variable.prime_condition ? variable.target_condition) ? variable.prime_condition
+	
+	var target_condition = label === 'filler' ? 'filler' : variable.target_condition
+	var prime_condition = label === 'filler' ? 'filler' : variable.prime_condition
+	
 	
 	return newTrial(label,
 		newText("ready", "<i>Press space when ready</i>")
@@ -185,7 +195,7 @@ var trial = label => variable => {
 			.print()
 		,
 		
-		newText("target", variable.target)
+		newText("target", target)
 			.center()
 			.print()
 		,
@@ -213,7 +223,7 @@ var trial = label => variable => {
 			.print()
 		,
 
-		newText("prime", variable.prime)
+		newText("prime", prime)
 			.center()
 			.print()
 		,
@@ -286,14 +296,15 @@ var trial = label => variable => {
 	.log('item',				variable.item)
 	.log('condition',			variable.condition)
 	.log('target_condition', 	target_condition)
-	.log('target_verb',			variable.target_verb)
-	.log('target',				variable.target)
+	.log('target_verb',			target_verb)
+	.log('target',				target)
 	.log('prime_condition',		prime_condition)
-	.log('prime_verb',			variable.prime_verb)
-	.log('prime',				variable.prime)
+	.log('prime_verb',			prime_verb)
+	.log('prime',				prime)
 	.log('cue0',				variable.cue0)
 	.log('cue1',				variable.cue1)
 	.log('cue2',				variable.cue2)
+	.log('flip_order',			flip_order)
 }
 
 Template('practice.csv', trial('trial_prac'))
