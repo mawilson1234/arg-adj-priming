@@ -163,7 +163,7 @@ var trial = label => variable => {
 	var cue2_vpos = 'middle at 75%'
 	
 	return newTrial(label,
-		newText("ready", "Press space when ready")
+		newText("ready", "<i>Press space when ready</i>")
 			.center()
 			.print()
 		,
@@ -246,7 +246,7 @@ var trial = label => variable => {
 			.center()
 			.add(cue0_hpos, cue0_vpos, newText(variable.cue0).color("red"))
 			.add(cue1_hpos, cue1_vpos, newText(variable.cue1).color("red"))
-			.add(cue2_hpos, cue1_vpos, newText(variable.cue2).color("red"))
+			.add(cue2_hpos, cue2_vpos, newText(variable.cue2).color("red"))
 			.print()
 		,
 		
