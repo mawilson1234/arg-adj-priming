@@ -1,0 +1,15 @@
+item,condition,target_verb,target,prime_verb,prime,cue0,cue1,cue2
+15,filler,hop,The bunny is hopping.,swing,The baseball player is swinging at the ball.,bunny,hopping,
+16,filler,swing,The baseball player is swinging at the ball.,wash,The mechanic is washing the car.,ball,swinging,baseball
+17,filler,pull,The bird is pulling a worm out of the ground.,watch,The woman is watching TV.,ground,worm,
+18,filler,rake,The man is raking the leaves.,do,The boy is doing somersaults.,leaves,man,raking
+19,filler,feed,The girl is feeding the dogs.,serve,The waiter is serving the couple their food.,feeding,girl,
+20,filler,mop,The janitor is mopping the floor.,pull,The bird is pulling a worm out of the ground.,floor,mopping,janitor
+21,filler,look,The detective is using the magnifying glass to find clues.,gallop,The horse is galloping.,detective,clues,
+22,filler,gallop,The horse is galloping.,rake,The man is raking the leaves.,horse,galloping,
+23,filler,hug,The man and the woman are hugging.,look,The detective is using the magnifying glass to find clues.,woman,hugging,
+24,filler,wash,The mechanic is washing the car.,hop,The bunny is hopping.,car,mechanic,washing
+25,filler,serve,The waiter is serving the couple their food.,operate,The doctor is operating on the patient.,food,waiter,
+26,filler,watch,The woman is watching TV.,feed,The girl is feeding the dogs.,watching,TV,woman
+27,filler,do,The boy is doing somersaults.,mop,The janitor is mopping the floor.,somersaults,doing,
+28,filler,operate,The doctor is operating on the patient.,hug,The man and the woman are hugging.,patient,operating,doctor

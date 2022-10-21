@@ -1,0 +1,3 @@
+﻿group,item,condition,target_condition,target_verb,target,prime_condition,prime_verb,prime,cue0,cue1,cue2
+practice,p1,practice,practice,believe,Which boxer did they believe won the match?,that,think,Which zookeeper thought that the giraffe loved them?,Which zookeeper,thought,loved
+practice,p2,practice,practice,think,The YouTuber thought that the singer liked him.,null,trick,The magician tricked his brother.,thought,liked,YouTuber
