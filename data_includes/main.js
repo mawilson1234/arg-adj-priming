@@ -160,20 +160,19 @@ var trial = label => variable => {
 	var cue2_hpos = cue0_hpos === 'center at 50%' ? 'center at 80%' : 'center at 50%'
 	var cue2_vpos = 'middle at 75%'
 	
+	var target_condition 	= label === 'filler' ? 'filler' : variable.target_condition
+	var prime_condition 	= label === 'filler' ? 'filler' : variable.prime_condition
+	
 	// flip order of prime and target randomly for fillers
 	// this ensure that participants will be less likely to notice
 	// that the recalled sentence is always the first one
 	var flip_order 			= Math.random() < 0.5
 	var target 				= label === 'filler' ? (flip_order ? variable.target 			: variable.prime) 				: variable.target
 	var target_verb 		= label === 'filler' ? (flip_order ? variable.target_verb 		: variable.prime_verb) 			: variable.target_verb
-	var target_condition 	= label === 'filler' ? (flip_order ? variable.target_condition 	: variable.prime_condition)	 	: variable.target_condition
+	// var target_condition = label === 'filler' ? (flip_order ? variable.target_condition 	: variable.prime_condition)	 	: variable.target_condition
 	var prime 				= label === 'filler' ? (flip_order ? variable.prime 			: variable.target) 				: variable.prime
 	var prime_verb 			= label === 'filler' ? (flip_order ? variable.prime_verb 		: variable.target_verb) 		: variable.prime_verb
-	var prime_condition 	= label === 'filler' ? (flip_order ? variable.prime_condition 	: variable.target_condition)	: variable.prime_condition
-	
-	var target_condition = label === 'filler' ? 'filler' : variable.target_condition
-	var prime_condition = label === 'filler' ? 'filler' : variable.prime_condition
-	
+	// var prime_condition 	= label === 'filler' ? (flip_order ? variable.prime_condition 	: variable.target_condition)	: variable.prime_condition
 	
 	return newTrial(label,
 		newText("ready", "<i>Press space when ready</i>")
