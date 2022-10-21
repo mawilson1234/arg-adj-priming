@@ -160,7 +160,7 @@ var trial = label => variable => {
 	var cue2_hpos = cue0_hpos === 'center at 50%' ? 'center at 80%' : 'center at 50%'
 	var cue2_vpos = 'middle at 75%'
 	
-	var prime_has_PP		= label === 'filler' ? 'filler' : variable.prime_has_PP
+	var prime_has_PP		= label === 'filler' ? 'filler' : (label === 'trial_prac' ? 'practice' : variable.prime_has_PP)
 	var target_condition 	= label === 'filler' ? 'filler' : variable.target_condition
 	var prime_condition 	= label === 'filler' ? 'filler' : variable.prime_condition
 	
