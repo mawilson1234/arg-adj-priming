@@ -1,57 +1,113 @@
-group,item,condition,target_condition,target_verb,target,prime_condition,prime_verb,prime,cue0,cue1,cue2
-A,1,match,adjunct,wipe,The mother is wiping the baby with the cloth.,adjunct,separate,The burglar is separating the turkey legs with the knife.,baby,cloth,mother
-B,1,match,argument,bathe,The mother is bathing the baby with the cloth.,argument,plow,The mother is plowing the field with the tractor.,baby,cloth,mother
-C,1,mismatch,adjunct,wipe,The mother is wiping the baby with the cloth.,argument,jab,The caveman is jabbing the lion with the spear.,baby,cloth,mother
-D,1,mismatch,argument,bathe,The mother is bathing the baby with the cloth.,adjunct,burst,The burglar is bursting the balloon with the needle.,baby,cloth,mother
-D,2,match,adjunct,separate,The burglar is separating the turkey legs with the knife.,adjunct,attack,The caveman is attacking the lion with the spear.,legs,knife,turkey
-A,2,match,argument,chop,The burglar is chopping the turkey legs with the knife.,argument,scratch,The caveman is scratching the car with the key.,legs,knife,turkey
-B,2,mismatch,adjunct,separate,The burglar is separating the turkey legs with the knife.,argument,plow,The mother is plowing the field with the tractor.,legs,knife,turkey
-C,2,mismatch,argument,chop,The burglar is chopping the turkey legs with the knife.,adjunct,threaten,The zookeeper is threatening the tiger with the baton.,legs,knife,turkey
-C,3,match,adjunct,fill,The gardener is filling the hole with the shovel.,adjunct,threaten,The zookeeper is threatening the tiger with the baton.,gardener,hole,shovel
-D,3,match,argument,dig,The gardener is digging the hole with the shovel.,argument,tie,The magician is tying the assistant with the rope.,gardener,hole,shovel
-A,3,mismatch,adjunct,fill,The gardener is filling the hole with the shovel.,argument,chop,The burglar is chopping the turkey legs with the knife.,gardener,hole,shovel
-B,3,mismatch,argument,dig,The gardener is digging the hole with the shovel.,adjunct,serve,The magician is serving the soup with the spoon.,gardener,hole,shovel
-B,4,match,adjunct,attack,The caveman is attacking the lion with the spear.,adjunct,bother,The gardener is bothering the cat with the toy.,caveman,lion,spear
-C,4,match,argument,jab,The caveman is jabbing the lion with the spear.,argument,bathe,The mother is bathing the baby with the cloth.,caveman,lion,spear
-D,4,mismatch,adjunct,attack,The caveman is attacking the lion with the spear.,argument,scratch,The caveman is scratching the car with the key.,caveman,lion,spear
-A,4,mismatch,argument,jab,The caveman is jabbing the lion with the spear.,adjunct,tease,The zookeeper is teasing the snake with the stick.,caveman,lion,spear
-A,5,match,adjunct,preparing,The mother is preparing the field with the tractor.,adjunct,burst,The burglar is bursting the balloon with the needle.,tractor,field,mother
-B,5,match,argument,plow,The mother is plowing the field with the tractor.,argument,prod,The gardener is prodding the cat with the toy.,tractor,field,mother
-C,5,mismatch,adjunct,preparing,The mother is preparing the field with the tractor.,argument,scoop,The pirate is scooping the ice cream with the spoon.,tractor,field,mother
-D,5,mismatch,argument,plow,The mother is plowing the field with the tractor.,adjunct,bother,The gardener is bothering the cat with the toy.,tractor,field,mother
-D,6,match,adjunct,tease,The zookeeper is teasing the snake with the stick.,adjunct,restrain,The magician is restraining the assistant with the rope.,stick,zookeeper,snake
-A,6,match,argument,poke,The zookeeper is poking the snake with the stick.,argument,till,The pirate is tilling the soil with the hoe.,stick,zookeeper,snake
-B,6,mismatch,adjunct,tease,The zookeeper is teasing the snake with the stick.,argument,tie,The magician is tying the assistant with the rope.,stick,zookeeper,snake
-C,6,mismatch,argument,poke,The zookeeper is poking the snake with the stick.,adjunct,restrain,The magician is restraining the assistant with the rope.,stick,zookeeper,snake
-C,7,match,adjunct,bother,The gardener is bothering the cat with the toy.,adjunct,preparing,The mother is preparing the field with the tractor.,gardener,toy,cat
-D,7,match,argument,prod,The gardener is prodding the cat with the toy.,argument,jab,The caveman is jabbing the lion with the spear.,gardener,toy,cat
-A,7,mismatch,adjunct,bother,The gardener is bothering the cat with the toy.,argument,bathe,The mother is bathing the baby with the cloth.,gardener,toy,cat
-B,7,mismatch,argument,prod,The gardener is prodding the cat with the toy.,adjunct,work,The pirate is working the soil with the hoe.,gardener,toy,cat
-B,8,match,adjunct,burst,The burglar is bursting the balloon with the needle.,adjunct,tease,The zookeeper is teasing the snake with the stick.,burglar,balloon,needle
-C,8,match,argument,puncture,The burglar is puncturing the balloon with the needle.,argument,strike,The zookeeper is striking the tiger with the baton.,burglar,balloon,needle
-D,8,mismatch,adjunct,burst,The burglar is bursting the balloon with the needle.,argument,poke,The zookeeper is poking the snake with the stick.,burglar,balloon,needle
-A,8,mismatch,argument,puncture,The burglar is puncturing the balloon with the needle.,adjunct,separate,The burglar is separating the turkey legs with the knife.,burglar,balloon,needle
-A,9,match,adjunct,sample,The pirate is sampling the ice cream with the spoon.,adjunct,serve,The magician is serving the soup with the spoon.,spoon,pirate,ice
-B,9,match,argument,scoop,The pirate is scooping the ice cream with the spoon.,argument,stir,The magician is stirring the soup with the spoon.,spoon,pirate,ice
-C,9,mismatch,adjunct,sample,The pirate is sampling the ice cream with the spoon.,argument,stir,The magician is stirring the soup with the spoon.,spoon,pirate,ice
-D,9,mismatch,argument,scoop,The pirate is scooping the ice cream with the spoon.,adjunct,attack,The caveman is attacking the lion with the spear.,spoon,pirate,ice
-D,10,match,adjunct,vandalize,The caveman is vandalizing the car with the key.,adjunct,fill,The gardener is filling the hole with the shovel.,caveman,car,key
-A,10,match,argument,scratch,The caveman is scratching the car with the key.,argument,chop,The burglar is chopping the turkey legs with the knife.,caveman,car,key
-B,10,mismatch,adjunct,vandalize,The caveman is vandalizing the car with the key.,argument,dig,The gardener is digging the hole with the shovel.,caveman,car,key
-C,10,mismatch,argument,scratch,The caveman is scratching the car with the key.,adjunct,sample,The pirate is sampling the ice cream with the spoon.,caveman,car,key
-C,11,match,adjunct,serve,The magician is serving the soup with the spoon.,adjunct,sample,The pirate is sampling the ice cream with the spoon.,soup,magician,spoon
-D,11,match,argument,stir,The magician is stirring the soup with the spoon.,argument,poke,The zookeeper is poking the snake with the stick.,soup,magician,spoon
-A,11,mismatch,adjunct,serve,The magician is serving the soup with the spoon.,argument,prod,The gardener is prodding the cat with the toy.,soup,magician,spoon
-B,11,mismatch,argument,stir,The magician is stirring the soup with the spoon.,adjunct,preparing,The mother is preparing the field with the tractor.,soup,magician,spoon
-B,12,match,adjunct,threaten,The zookeeper is threatening the tiger with the baton.,adjunct,vandalize,The caveman is vandalizing the car with the key.,baton,zookeeper,tiger
-C,12,match,argument,strike,The zookeeper is striking the tiger with the baton.,argument,dig,The gardener is digging the hole with the shovel.,baton,zookeeper,tiger
-D,12,mismatch,adjunct,threaten,The zookeeper is threatening the tiger with the baton.,argument,till,The pirate is tilling the soil with the hoe.,baton,zookeeper,tiger
-A,12,mismatch,argument,strike,The zookeeper is striking the tiger with the baton.,adjunct,fill,The gardener is filling the hole with the shovel.,baton,zookeeper,tiger
-A,13,match,adjunct,restrain,The magician is restraining the assistant with the rope.,adjunct,work,The pirate is working the soil with the hoe.,magician,assistant,rope
-B,13,match,argument,tie,The magician is tying the assistant with the rope.,argument,puncture,The burglar is puncturing the balloon with the needle.,magician,assistant,rope
-C,13,mismatch,adjunct,restrain,The magician is restraining the assistant with the rope.,argument,strike,The zookeeper is striking the tiger with the baton.,magician,assistant,rope
-D,13,mismatch,argument,tie,The magician is tying the assistant with the rope.,adjunct,vandalize,The caveman is vandalizing the car with the key.,magician,assistant,rope
-D,14,match,adjunct,work,The pirate is working the soil with the hoe.,adjunct,wipe,The mother is wiping the baby with the cloth.,soil,pirate,hoe
-A,14,match,argument,till,The pirate is tilling the soil with the hoe.,argument,scoop,The pirate is scooping the ice cream with the spoon.,soil,pirate,hoe
-B,14,mismatch,adjunct,work,The pirate is working the soil with the hoe.,argument,puncture,The burglar is puncturing the balloon with the needle.,soil,pirate,hoe
-C,14,mismatch,argument,till,The pirate is tilling the soil with the hoe.,adjunct,wipe,The mother is wiping the baby with the cloth.,soil,pirate,hoe
+group,item,target_condition,target_verb,target,prime_condition,prime_verb,prime,cue0,cue1,cue2,prime_has_PP
+A,1,adjunct,wipe,The mother is wiping the baby with the cloth.,adjunct,separate,The burglar is separating the turkey legs with the knife.,baby,cloth,mother,True
+B,1,argument,bathe,The mother is bathing the baby with the cloth.,argument,plow,The mother is plowing the field with the tractor.,baby,cloth,mother,True
+C,1,adjunct,wipe,The mother is wiping the baby with the cloth.,argument,jab,The caveman is jabbing the lion with the spear.,baby,cloth,mother,True
+D,1,argument,bathe,The mother is bathing the baby with the cloth.,adjunct,burst,The burglar is bursting the balloon with the needle.,baby,cloth,mother,True
+E,1,adjunct,wipe,The mother is wiping the baby with the cloth.,adjunct,separate,The burglar is separating the turkey legs.,baby,cloth,mother,False
+F,1,argument,bathe,The mother is bathing the baby with the cloth.,argument,plow,The mother is plowing the field.,baby,cloth,mother,False
+G,1,adjunct,wipe,The mother is wiping the baby with the cloth.,argument,jab,The caveman is jabbing the lion.,baby,cloth,mother,False
+H,1,argument,bathe,The mother is bathing the baby with the cloth.,adjunct,burst,The burglar is bursting the balloon.,baby,cloth,mother,False
+H,2,adjunct,separate,The burglar is separating the turkey legs with the knife.,adjunct,attack,The caveman is attacking the lion with the spear.,legs,knife,turkey,True
+A,2,argument,chop,The burglar is chopping the turkey legs with the knife.,argument,scratch,The caveman is scratching the car with the key.,legs,knife,turkey,True
+B,2,adjunct,separate,The burglar is separating the turkey legs with the knife.,argument,plow,The mother is plowing the field with the tractor.,legs,knife,turkey,True
+C,2,argument,chop,The burglar is chopping the turkey legs with the knife.,adjunct,threaten,The zookeeper is threatening the tiger with the baton.,legs,knife,turkey,True
+D,2,adjunct,separate,The burglar is separating the turkey legs with the knife.,adjunct,attack,The caveman is attacking the lion.,legs,knife,turkey,False
+E,2,argument,chop,The burglar is chopping the turkey legs with the knife.,argument,scratch,The caveman is scratching the car.,legs,knife,turkey,False
+F,2,adjunct,separate,The burglar is separating the turkey legs with the knife.,argument,plow,The mother is plowing the field.,legs,knife,turkey,False
+G,2,argument,chop,The burglar is chopping the turkey legs with the knife.,adjunct,threaten,The zookeeper is threatening the tiger.,legs,knife,turkey,False
+G,3,adjunct,fill,The gardener is filling the hole with the shovel.,adjunct,threaten,The zookeeper is threatening the tiger with the baton.,gardener,hole,shovel,True
+H,3,argument,dig,The gardener is digging the hole with the shovel.,argument,tie,The magician is tying the assistant with the rope.,gardener,hole,shovel,True
+A,3,adjunct,fill,The gardener is filling the hole with the shovel.,argument,chop,The burglar is chopping the turkey legs with the knife.,gardener,hole,shovel,True
+B,3,argument,dig,The gardener is digging the hole with the shovel.,adjunct,serve,The magician is serving the soup with the spoon.,gardener,hole,shovel,True
+C,3,adjunct,fill,The gardener is filling the hole with the shovel.,adjunct,threaten,The zookeeper is threatening the tiger.,gardener,hole,shovel,False
+D,3,argument,dig,The gardener is digging the hole with the shovel.,argument,tie,The magician is tying the assistant.,gardener,hole,shovel,False
+E,3,adjunct,fill,The gardener is filling the hole with the shovel.,argument,chop,The burglar is chopping the turkey legs.,gardener,hole,shovel,False
+F,3,argument,dig,The gardener is digging the hole with the shovel.,adjunct,serve,The magician is serving the soup.,gardener,hole,shovel,False
+F,4,adjunct,attack,The caveman is attacking the lion with the spear.,adjunct,bother,The gardener is bothering the cat with the toy.,caveman,lion,spear,True
+G,4,argument,jab,The caveman is jabbing the lion with the spear.,argument,bathe,The mother is bathing the baby with the cloth.,caveman,lion,spear,True
+H,4,adjunct,attack,The caveman is attacking the lion with the spear.,argument,scratch,The caveman is scratching the car with the key.,caveman,lion,spear,True
+A,4,argument,jab,The caveman is jabbing the lion with the spear.,adjunct,tease,The zookeeper is teasing the snake with the stick.,caveman,lion,spear,True
+B,4,adjunct,attack,The caveman is attacking the lion with the spear.,adjunct,bother,The gardener is bothering the cat.,caveman,lion,spear,False
+C,4,argument,jab,The caveman is jabbing the lion with the spear.,argument,bathe,The mother is bathing the baby.,caveman,lion,spear,False
+D,4,adjunct,attack,The caveman is attacking the lion with the spear.,argument,scratch,The caveman is scratching the car.,caveman,lion,spear,False
+E,4,argument,jab,The caveman is jabbing the lion with the spear.,adjunct,tease,The zookeeper is teasing the snake.,caveman,lion,spear,False
+E,5,adjunct,preparing,The mother is preparing the field with the tractor.,adjunct,burst,The burglar is bursting the balloon with the needle.,tractor,field,mother,True
+F,5,argument,plow,The mother is plowing the field with the tractor.,argument,prod,The gardener is prodding the cat with the toy.,tractor,field,mother,True
+G,5,adjunct,preparing,The mother is preparing the field with the tractor.,argument,scoop,The pirate is scooping the ice cream with the spoon.,tractor,field,mother,True
+H,5,argument,plow,The mother is plowing the field with the tractor.,adjunct,bother,The gardener is bothering the cat with the toy.,tractor,field,mother,True
+A,5,adjunct,preparing,The mother is preparing the field with the tractor.,adjunct,burst,The burglar is bursting the balloon.,tractor,field,mother,False
+B,5,argument,plow,The mother is plowing the field with the tractor.,argument,prod,The gardener is prodding the cat.,tractor,field,mother,False
+C,5,adjunct,preparing,The mother is preparing the field with the tractor.,argument,scoop,The pirate is scooping the ice cream.,tractor,field,mother,False
+D,5,argument,plow,The mother is plowing the field with the tractor.,adjunct,bother,The gardener is bothering the cat.,tractor,field,mother,False
+D,6,adjunct,tease,The zookeeper is teasing the snake with the stick.,adjunct,restrain,The magician is restraining the assistant with the rope.,stick,zookeeper,snake,True
+E,6,argument,poke,The zookeeper is poking the snake with the stick.,argument,till,The pirate is tilling the soil with the hoe.,stick,zookeeper,snake,True
+F,6,adjunct,tease,The zookeeper is teasing the snake with the stick.,argument,tie,The magician is tying the assistant with the rope.,stick,zookeeper,snake,True
+G,6,argument,poke,The zookeeper is poking the snake with the stick.,adjunct,restrain,The magician is restraining the assistant with the rope.,stick,zookeeper,snake,True
+H,6,adjunct,tease,The zookeeper is teasing the snake with the stick.,adjunct,restrain,The magician is restraining the assistant.,stick,zookeeper,snake,False
+A,6,argument,poke,The zookeeper is poking the snake with the stick.,argument,till,The pirate is tilling the soil.,stick,zookeeper,snake,False
+B,6,adjunct,tease,The zookeeper is teasing the snake with the stick.,argument,tie,The magician is tying the assistant.,stick,zookeeper,snake,False
+C,6,argument,poke,The zookeeper is poking the snake with the stick.,adjunct,restrain,The magician is restraining the assistant.,stick,zookeeper,snake,False
+C,7,adjunct,bother,The gardener is bothering the cat with the toy.,adjunct,preparing,The mother is preparing the field with the tractor.,gardener,toy,cat,True
+D,7,argument,prod,The gardener is prodding the cat with the toy.,argument,jab,The caveman is jabbing the lion with the spear.,gardener,toy,cat,True
+E,7,adjunct,bother,The gardener is bothering the cat with the toy.,argument,bathe,The mother is bathing the baby with the cloth.,gardener,toy,cat,True
+F,7,argument,prod,The gardener is prodding the cat with the toy.,adjunct,work,The pirate is working the soil with the hoe.,gardener,toy,cat,True
+G,7,adjunct,bother,The gardener is bothering the cat with the toy.,adjunct,preparing,The mother is preparing the field.,gardener,toy,cat,False
+H,7,argument,prod,The gardener is prodding the cat with the toy.,argument,jab,The caveman is jabbing the lion.,gardener,toy,cat,False
+A,7,adjunct,bother,The gardener is bothering the cat with the toy.,argument,bathe,The mother is bathing the baby.,gardener,toy,cat,False
+B,7,argument,prod,The gardener is prodding the cat with the toy.,adjunct,work,The pirate is working the soil.,gardener,toy,cat,False
+B,8,adjunct,burst,The burglar is bursting the balloon with the needle.,adjunct,tease,The zookeeper is teasing the snake with the stick.,burglar,balloon,needle,True
+C,8,argument,puncture,The burglar is puncturing the balloon with the needle.,argument,strike,The zookeeper is striking the tiger with the baton.,burglar,balloon,needle,True
+D,8,adjunct,burst,The burglar is bursting the balloon with the needle.,argument,poke,The zookeeper is poking the snake with the stick.,burglar,balloon,needle,True
+E,8,argument,puncture,The burglar is puncturing the balloon with the needle.,adjunct,separate,The burglar is separating the turkey legs with the knife.,burglar,balloon,needle,True
+F,8,adjunct,burst,The burglar is bursting the balloon with the needle.,adjunct,tease,The zookeeper is teasing the snake.,burglar,balloon,needle,False
+G,8,argument,puncture,The burglar is puncturing the balloon with the needle.,argument,strike,The zookeeper is striking the tiger.,burglar,balloon,needle,False
+H,8,adjunct,burst,The burglar is bursting the balloon with the needle.,argument,poke,The zookeeper is poking the snake.,burglar,balloon,needle,False
+A,8,argument,puncture,The burglar is puncturing the balloon with the needle.,adjunct,separate,The burglar is separating the turkey legs.,burglar,balloon,needle,False
+A,9,adjunct,sample,The pirate is sampling the ice cream with the spoon.,adjunct,serve,The magician is serving the soup with the spoon.,spoon,pirate,ice,True
+B,9,argument,scoop,The pirate is scooping the ice cream with the spoon.,argument,stir,The magician is stirring the soup with the spoon.,spoon,pirate,ice,True
+C,9,adjunct,sample,The pirate is sampling the ice cream with the spoon.,argument,stir,The magician is stirring the soup with the spoon.,spoon,pirate,ice,True
+D,9,argument,scoop,The pirate is scooping the ice cream with the spoon.,adjunct,attack,The caveman is attacking the lion with the spear.,spoon,pirate,ice,True
+E,9,adjunct,sample,The pirate is sampling the ice cream with the spoon.,adjunct,serve,The magician is serving the soup.,spoon,pirate,ice,False
+F,9,argument,scoop,The pirate is scooping the ice cream with the spoon.,argument,stir,The magician is stirring the soup.,spoon,pirate,ice,False
+G,9,adjunct,sample,The pirate is sampling the ice cream with the spoon.,argument,stir,The magician is stirring the soup.,spoon,pirate,ice,False
+H,9,argument,scoop,The pirate is scooping the ice cream with the spoon.,adjunct,attack,The caveman is attacking the lion.,spoon,pirate,ice,False
+H,10,adjunct,vandalize,The caveman is vandalizing the car with the key.,adjunct,fill,The gardener is filling the hole with the shovel.,caveman,car,key,True
+A,10,argument,scratch,The caveman is scratching the car with the key.,argument,chop,The burglar is chopping the turkey legs with the knife.,caveman,car,key,True
+B,10,adjunct,vandalize,The caveman is vandalizing the car with the key.,argument,dig,The gardener is digging the hole with the shovel.,caveman,car,key,True
+C,10,argument,scratch,The caveman is scratching the car with the key.,adjunct,sample,The pirate is sampling the ice cream with the spoon.,caveman,car,key,True
+D,10,adjunct,vandalize,The caveman is vandalizing the car with the key.,adjunct,fill,The gardener is filling the hole.,caveman,car,key,False
+E,10,argument,scratch,The caveman is scratching the car with the key.,argument,chop,The burglar is chopping the turkey legs.,caveman,car,key,False
+F,10,adjunct,vandalize,The caveman is vandalizing the car with the key.,argument,dig,The gardener is digging the hole.,caveman,car,key,False
+G,10,argument,scratch,The caveman is scratching the car with the key.,adjunct,sample,The pirate is sampling the ice cream.,caveman,car,key,False
+G,11,adjunct,serve,The magician is serving the soup with the spoon.,adjunct,sample,The pirate is sampling the ice cream with the spoon.,soup,magician,spoon,True
+H,11,argument,stir,The magician is stirring the soup with the spoon.,argument,poke,The zookeeper is poking the snake with the stick.,soup,magician,spoon,True
+A,11,adjunct,serve,The magician is serving the soup with the spoon.,argument,prod,The gardener is prodding the cat with the toy.,soup,magician,spoon,True
+B,11,argument,stir,The magician is stirring the soup with the spoon.,adjunct,preparing,The mother is preparing the field with the tractor.,soup,magician,spoon,True
+C,11,adjunct,serve,The magician is serving the soup with the spoon.,adjunct,sample,The pirate is sampling the ice cream.,soup,magician,spoon,False
+D,11,argument,stir,The magician is stirring the soup with the spoon.,argument,poke,The zookeeper is poking the snake.,soup,magician,spoon,False
+E,11,adjunct,serve,The magician is serving the soup with the spoon.,argument,prod,The gardener is prodding the cat.,soup,magician,spoon,False
+F,11,argument,stir,The magician is stirring the soup with the spoon.,adjunct,preparing,The mother is preparing the field.,soup,magician,spoon,False
+F,12,adjunct,threaten,The zookeeper is threatening the tiger with the baton.,adjunct,vandalize,The caveman is vandalizing the car with the key.,baton,zookeeper,tiger,True
+G,12,argument,strike,The zookeeper is striking the tiger with the baton.,argument,dig,The gardener is digging the hole with the shovel.,baton,zookeeper,tiger,True
+H,12,adjunct,threaten,The zookeeper is threatening the tiger with the baton.,argument,till,The pirate is tilling the soil with the hoe.,baton,zookeeper,tiger,True
+A,12,argument,strike,The zookeeper is striking the tiger with the baton.,adjunct,fill,The gardener is filling the hole with the shovel.,baton,zookeeper,tiger,True
+B,12,adjunct,threaten,The zookeeper is threatening the tiger with the baton.,adjunct,vandalize,The caveman is vandalizing the car.,baton,zookeeper,tiger,False
+C,12,argument,strike,The zookeeper is striking the tiger with the baton.,argument,dig,The gardener is digging the hole.,baton,zookeeper,tiger,False
+D,12,adjunct,threaten,The zookeeper is threatening the tiger with the baton.,argument,till,The pirate is tilling the soil.,baton,zookeeper,tiger,False
+E,12,argument,strike,The zookeeper is striking the tiger with the baton.,adjunct,fill,The gardener is filling the hole.,baton,zookeeper,tiger,False
+E,13,adjunct,restrain,The magician is restraining the assistant with the rope.,adjunct,work,The pirate is working the soil with the hoe.,magician,assistant,rope,True
+F,13,argument,tie,The magician is tying the assistant with the rope.,argument,puncture,The burglar is puncturing the balloon with the needle.,magician,assistant,rope,True
+G,13,adjunct,restrain,The magician is restraining the assistant with the rope.,argument,strike,The zookeeper is striking the tiger with the baton.,magician,assistant,rope,True
+H,13,argument,tie,The magician is tying the assistant with the rope.,adjunct,vandalize,The caveman is vandalizing the car with the key.,magician,assistant,rope,True
+A,13,adjunct,restrain,The magician is restraining the assistant with the rope.,adjunct,work,The pirate is working the soil.,magician,assistant,rope,False
+B,13,argument,tie,The magician is tying the assistant with the rope.,argument,puncture,The burglar is puncturing the balloon.,magician,assistant,rope,False
+C,13,adjunct,restrain,The magician is restraining the assistant with the rope.,argument,strike,The zookeeper is striking the tiger.,magician,assistant,rope,False
+D,13,argument,tie,The magician is tying the assistant with the rope.,adjunct,vandalize,The caveman is vandalizing the car.,magician,assistant,rope,False
+D,14,adjunct,work,The pirate is working the soil with the hoe.,adjunct,wipe,The mother is wiping the baby with the cloth.,soil,pirate,hoe,True
+E,14,argument,till,The pirate is tilling the soil with the hoe.,argument,scoop,The pirate is scooping the ice cream with the spoon.,soil,pirate,hoe,True
+F,14,adjunct,work,The pirate is working the soil with the hoe.,argument,puncture,The burglar is puncturing the balloon with the needle.,soil,pirate,hoe,True
+G,14,argument,till,The pirate is tilling the soil with the hoe.,adjunct,wipe,The mother is wiping the baby with the cloth.,soil,pirate,hoe,True
+H,14,adjunct,work,The pirate is working the soil with the hoe.,adjunct,wipe,The mother is wiping the baby.,soil,pirate,hoe,False
+A,14,argument,till,The pirate is tilling the soil with the hoe.,argument,scoop,The pirate is scooping the ice cream.,soil,pirate,hoe,False
+B,14,adjunct,work,The pirate is working the soil with the hoe.,argument,puncture,The burglar is puncturing the balloon.,soil,pirate,hoe,False
+C,14,argument,till,The pirate is tilling the soil with the hoe.,adjunct,wipe,The mother is wiping the baby.,soil,pirate,hoe,False
