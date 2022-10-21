@@ -180,7 +180,7 @@ var trial = label => variable => {
 		// 	.record()
 		// ,
 		
-		newText("memorize1", "Read aloud & memorize (Please do not skip words!)")
+		newText("memorize", "<i>Read aloud & memorize (Please do not skip words!)</i>")
 			.center()
 			.print()
 		,
@@ -190,12 +190,12 @@ var trial = label => variable => {
 			.print()
 		,
 		
-		newTimer('t1', 5000)
+		newTimer('mem_delay', 5000)
 			.start()
 			.wait()
 		,
 		
-		getText("memorize1")
+		getText("memorize")
 			.remove()
 		,
 		
@@ -203,12 +203,12 @@ var trial = label => variable => {
 			.remove()
 		,
 		
-		newTimer('t2', 2000)
+		newTimer('intersentence_delay', 2000)
 			.start()
 			.wait()
 		,   
 		
-		newText("memorize2", "<i>Read aloud & memorize (Please do not skip words!)</i>")
+		getText("memorize")
 			.center()
 			.print()
 		,
@@ -218,12 +218,12 @@ var trial = label => variable => {
 			.print()
 		,
 		
-		newTimer('t3', 5000)
+		getTimer('mem_delay')
 			.start()
 			.wait()
 		,
 		
-		getText("memorize2")
+		getText("memorize")
 			.remove()
 		,
 		
@@ -231,7 +231,7 @@ var trial = label => variable => {
 			.remove()
 		,
 		
-		newTimer('t4', 2000)
+		getTimer('intersentence_delay')
 			.start()
 			.wait()
 		,
@@ -265,7 +265,7 @@ var trial = label => variable => {
 			.print()
 		,
 		
-		newTimer('t5', 1000)
+		newTimer('intertrial_delay', 1000)
 			.start()
 			.wait()
 		,
@@ -274,7 +274,7 @@ var trial = label => variable => {
 			.wait()
 		,
 		
-		newTimer('t6;', 1000)
+		getTimer('intertrial_delay', 1000)
 			.start()
 			.wait()
 		,
