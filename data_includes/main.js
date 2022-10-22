@@ -312,7 +312,7 @@ var trial = label => variable => {
 	.log('prime',				prime)
 	.log('cue0',				variable.cue0)
 	.log('cue1',				variable.cue1)
-	.log('cue2',				variable.cue2)
+	// .log('cue2',				variable.cue2)
 	.log('flip_order',			flip_order)
 }
 
