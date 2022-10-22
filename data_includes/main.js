@@ -3,7 +3,9 @@ PennController.ResetPrefix(null) // Shorten command names (keep this line here)
 
 SetCounter("setcounter")
 
-var counterOverride = 0;
+
+var canvas_dim = 300
+var counterOverride = 0
 
 Sequence(
 	"setcounter",
@@ -153,12 +155,16 @@ newTrial("instruction2",
 
 var trial = label => variable => {
 	var group = label === 'filler' ? 'filler' : variable.group
-	var cue0_hpos = Math.random() < 0.5 ? 'center at 50%' : 'center at 20%'
-	var cue0_vpos = 'middle at 25%'
-	var cue1_hpos = cue0_hpos === 'center at 50%' ? 'center at 20%' : 'center at 80%'
-	var cue1_vpos = cue0_hpos === 'center at 50%' ? 'middle at 75%' : 'middle at 25%'
-	var cue2_hpos = cue0_hpos === 'center at 50%' ? 'center at 80%' : 'center at 50%'
-	var cue2_vpos = 'middle at 75%'
+	// var cue0_hpos = Math.random() < 0.5 ? 'center at 50%' : 'center at 20%'
+	// var cue0_vpos = 'middle at 25%'
+	// var cue1_hpos = cue0_hpos === 'center at 50%' ? 'center at 20%' : 'center at 80%'
+	// var cue1_vpos = cue0_hpos === 'center at 50%' ? 'middle at 75%' : 'middle at 25%'
+	// var cue2_hpos = cue0_hpos === 'center at 50%' ? 'center at 80%' : 'center at 50%'
+	// var cue2_vpos = 'middle at 75%'
+	var cue0_hpos = 'center at 20%'
+	var cue0_vpos = 'middle at 50%'
+	var cue1_hpos = 'center at 80%'
+	var cue1_vpos = 'middle at 50%'
 	
 	var prime_has_PP		= label === 'filler' ? 'filler' : (label === 'trial_prac' ? 'practice' : variable.prime_has_PP)
 	var target_condition 	= label === 'filler' ? 'filler' : variable.target_condition
@@ -255,11 +261,11 @@ var trial = label => variable => {
 			
 		,
 
-		newCanvas("shape", 400, 400)
+		newCanvas("shape", canvas_dim, canvas_dim)
 			.center()
 			.add(cue0_hpos, cue0_vpos, newText(variable.cue0).color("red"))
 			.add(cue1_hpos, cue1_vpos, newText(variable.cue1).color("red"))
-			.add(cue2_hpos, cue2_vpos, newText(variable.cue2).color("red"))
+			// .add(cue2_hpos, cue2_vpos, newText(variable.cue2).color("red"))
 			.print()
 		,
 		
