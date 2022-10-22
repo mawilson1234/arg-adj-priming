@@ -11,8 +11,8 @@ Sequence(
 	"setcounter",
 	"intro",
 	"consent",
-	"recording",
-	"microphonecheck",
+	// "recording",
+	// "microphonecheck",
 	"instruction",
 	randomize("trial_prac"),
 	"warn",
@@ -84,38 +84,38 @@ newTrial("warn",
 		.wait()
 )
 
-InitiateRecorder(
-	"https://umassgaplab.net/experiment/PCIbex_server.php", 
-	"This experiment collects audio recordings. <strong>Once " +
-	"you grant it access to your recording device, you will be " +
-	"notified of whether you are being recorded by a label at the top of the page.</strong>"
-).label("recording")
+// InitiateRecorder(
+// 	"https://umassgaplab.net/experiment/PCIbex_server.php", 
+// 	"This experiment collects audio recordings. <strong>Once " +
+// 	"you grant it access to your recording device, you will be " +
+// 	"notified of whether you are being recorded by a label at the top of the page.</strong>"
+// ).label("recording")
 
-newTrial("microphonecheck",
-	newText(
-		"mic","First, we need to make sure that your microphone is working properly. Press the 'Record' " +
-		"button below and say something. You should see a red squire saying 'Recording...' on the top of your " +
-		"screen. Once you press 'Stop' button, you should hear the playback of your recording. You can also " +
-		"re-play your recording by pressing the play button. Make sure that you turn on your audio to be able " +
-		"to hear your recording. After this procedure you should see a 'Next' botton at the bottom of this page " +
-		"(scroll down if you don't see the 'Next' button.)."
-	)
-		.print()
-	,
+// newTrial("microphonecheck",
+// 	newText(
+// 		"mic","First, we need to make sure that your microphone is working properly. Press the 'Record' " +
+// 		"button below and say something. You should see a red squire saying 'Recording...' on the top of your " +
+// 		"screen. Once you press 'Stop' button, you should hear the playback of your recording. You can also " +
+// 		"re-play your recording by pressing the play button. Make sure that you turn on your audio to be able " +
+// 		"to hear your recording. After this procedure you should see a 'Next' botton at the bottom of this page " +
+// 		"(scroll down if you don't see the 'Next' button.)."
+// 	)
+// 		.print()
+// 	,
 	
-	newMediaRecorder("recorder", "audio")
-		.once()
-		.print()
-		.center()
-		.wait()
-		.play()
-		.wait("playback")
-	,
+// 	newMediaRecorder("recorder", "audio")
+// 		.once()
+// 		.print()
+// 		.center()
+// 		.wait()
+// 		.play()
+// 		.wait("playback")
+// 	,
 	
-	newButton("Next")
-		.print()
-		.wait()
-)
+// 	newButton("Next")
+// 		.print()
+// 		.wait()
+// )
 
 newTrial("instruction",
 	newText(
@@ -195,9 +195,9 @@ var trial = label => variable => {
 			.remove()
 		,
 		
-		newMediaRecorder(variable.item, "audio")
-			.record()
-		,
+		// newMediaRecorder(variable.item, "audio")
+		// 	.record()
+		// ,
 		
 		newText("memorize", "<i>Read aloud & memorize (Please do not skip words!)</i>")
 			.center()
@@ -298,8 +298,8 @@ var trial = label => variable => {
 			.wait()
 		,
 		
-		getMediaRecorder(variable.item)
-			.stop()
+		// getMediaRecorder(variable.item)
+		// 	.stop()
 	)
 	.log('group',				group)
 	.log('item',				variable.item)
