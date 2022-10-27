@@ -44,11 +44,6 @@ newTrial("intro",
 		.print()
 		.log()
 	,
-
-	newTextInput("ProlificID")
-		.print()
-		.log()
-	,
 	
 	newFunction('lang',
 		() => document.querySelector(
@@ -57,9 +52,14 @@ newTrial("intro",
 	)
 		.call()
 	,
+
+	newTextInput("ProlificID")
+		.print()
+		.log()
+	,
 	
 	newFunction('id',
-		() => document.querySelect(
+		() => document.querySelector(
 			'textarea.PennController-ProlificID'
 		).placeholder = 'Your Prolific ID: '
 	)
