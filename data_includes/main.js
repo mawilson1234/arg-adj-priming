@@ -40,14 +40,30 @@ newTrial("intro",
 		.print()
 	,
 
-	newTextInput("Language", 'Your native language: ')
+	newTextInput("Language")
 		.print()
 		.log()
 	,
 
-	newTextInput("ProlificID", 'Your prolific ID: ')
+	newTextInput("ProlificID")
 		.print()
 		.log()
+	,
+	
+	newFunction(
+		() => document.querySelector(
+			'textarea.PennController-Language'
+		).placeholder = 'Your native language: '
+	)
+		.call()
+	,
+	
+	newFunction(
+		() => document.querySelect(
+			'textarea.PennController-ProlificID'
+		).placeholder = 'Your Prolific ID: '
+	)
+		.call()
 	,
 	
 	newButton("Next")
