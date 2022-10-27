@@ -50,7 +50,7 @@ newTrial("intro",
 		.log()
 	,
 	
-	newFunction(
+	newFunction('lang',
 		() => document.querySelector(
 			'textarea.PennController-Language'
 		).placeholder = 'Your native language: '
@@ -58,7 +58,7 @@ newTrial("intro",
 		.call()
 	,
 	
-	newFunction(
+	newFunction('id',
 		() => document.querySelect(
 			'textarea.PennController-ProlificID'
 		).placeholder = 'Your Prolific ID: '
